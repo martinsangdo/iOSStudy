@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84F4A5581C19912F002E292A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F4A5571C19912F002E292A /* MapKit.framework */; };
+		84F4A55A1C199137002E292A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F4A5591C199137002E292A /* CoreLocation.framework */; };
+		84F4A55D1C1991CE002E292A /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F4A55C1C1991CE002E292A /* MapAnnotation.m */; };
 		84FD5FE21C13049000B4B703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FE11C13049000B4B703 /* main.m */; };
 		84FD5FE51C13049000B4B703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FE41C13049000B4B703 /* AppDelegate.m */; };
 		84FD5FE81C13049000B4B703 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FE71C13049000B4B703 /* ViewController.m */; };
@@ -14,6 +17,7 @@
 		84FD5FED1C13049100B4B703 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FD5FEC1C13049100B4B703 /* Images.xcassets */; };
 		84FD5FF01C13049100B4B703 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FD5FEE1C13049100B4B703 /* LaunchScreen.xib */; };
 		84FD5FFC1C13049100B4B703 /* iOSStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FFB1C13049100B4B703 /* iOSStudyTests.m */; };
+		84FD60061C1306A600B4B703 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 84FD60051C1306A600B4B703 /* File */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84F4A5571C19912F002E292A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84F4A5591C199137002E292A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		84F4A55B1C1991CE002E292A /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		84F4A55C1C1991CE002E292A /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
 		84FD5FDC1C13049000B4B703 /* iOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD5FE01C13049000B4B703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FD5FE11C13049000B4B703 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +48,7 @@
 		84FD5FF51C13049100B4B703 /* iOSStudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSStudyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD5FFA1C13049100B4B703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FD5FFB1C13049100B4B703 /* iOSStudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSStudyTests.m; sourceTree = "<group>"; };
+		84FD60051C1306A600B4B703 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F4A55A1C199137002E292A /* CoreLocation.framework in Frameworks */,
+				84F4A5581C19912F002E292A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,9 +71,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		848CF9E31C16EE4000CDBBF6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84FD5FE91C13049100B4B703 /* Main.storyboard */,
+				84F4A55B1C1991CE002E292A /* MapAnnotation.h */,
+				84F4A55C1C1991CE002E292A /* MapAnnotation.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		84FD5FD31C13049000B4B703 = {
 			isa = PBXGroup;
 			children = (
+				84F4A5591C199137002E292A /* CoreLocation.framework */,
+				84F4A5571C19912F002E292A /* MapKit.framework */,
 				84FD5FDE1C13049000B4B703 /* iOSStudy */,
 				84FD5FF81C13049100B4B703 /* iOSStudyTests */,
 				84FD5FDD1C13049000B4B703 /* Products */,
@@ -81,11 +104,11 @@
 		84FD5FDE1C13049000B4B703 /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				848CF9E31C16EE4000CDBBF6 /* Views */,
 				84FD5FE31C13049000B4B703 /* AppDelegate.h */,
 				84FD5FE41C13049000B4B703 /* AppDelegate.m */,
 				84FD5FE61C13049000B4B703 /* ViewController.h */,
 				84FD5FE71C13049000B4B703 /* ViewController.m */,
-				84FD5FE91C13049100B4B703 /* Main.storyboard */,
 				84FD5FEC1C13049100B4B703 /* Images.xcassets */,
 				84FD5FEE1C13049100B4B703 /* LaunchScreen.xib */,
 				84FD5FDF1C13049000B4B703 /* Supporting Files */,
@@ -98,6 +121,7 @@
 			children = (
 				84FD5FE01C13049000B4B703 /* Info.plist */,
 				84FD5FE11C13049000B4B703 /* main.m */,
+				84FD60051C1306A600B4B703 /* File */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FD60061C1306A600B4B703 /* File in Resources */,
 				84FD5FEB1C13049100B4B703 /* Main.storyboard in Resources */,
 				84FD5FF01C13049100B4B703 /* LaunchScreen.xib in Resources */,
 				84FD5FED1C13049100B4B703 /* Images.xcassets in Resources */,
@@ -222,6 +247,7 @@
 				84FD5FE81C13049000B4B703 /* ViewController.m in Sources */,
 				84FD5FE51C13049000B4B703 /* AppDelegate.m in Sources */,
 				84FD5FE21C13049000B4B703 /* main.m in Sources */,
+				84F4A55D1C1991CE002E292A /* MapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +438,7 @@
 				84FD60011C13049100B4B703 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84FD60021C13049100B4B703 /* Build configuration list for PBXNativeTarget "iOSStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +447,7 @@
 				84FD60041C13049100B4B703 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

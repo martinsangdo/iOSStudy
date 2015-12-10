@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MapAnnotation.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    mapView.mapType = MKMapTypeHybrid;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +26,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)searchLocation:(id)sender {
+    CLLocationCoordinate2D location;
+    location.latitude = (double)[txtLat.text floatValue];
+    location.longitude = (double)[txtLon.text floatValue];
+    MapAnnotation *newAnnotation = [[MapAnnotation alloc] initWithTitle:@"here" addCoordinate:location];
+    [mapView addAnnotation:newAnnotation];
+    [self.view addSubview:mapView];
+}
 @end
