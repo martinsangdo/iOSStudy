@@ -16,6 +16,7 @@
 		8488588F1C1C43A200992588 /* lab.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 848858891C1C43A200992588 /* lab.pdf */; };
 		848858901C1C43A200992588 /* mt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8488588A1C1C43A200992588 /* mt.pdf */; };
 		848858911C1C43A200992588 /* nsstring.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8488588B1C1C43A200992588 /* nsstring.pdf */; };
+		848858941C1C47D200992588 /* GetDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848858931C1C47D200992588 /* GetDataViewController.m */; };
 		84F4A5581C19912F002E292A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F4A5571C19912F002E292A /* MapKit.framework */; };
 		84F4A55A1C199137002E292A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F4A5591C199137002E292A /* CoreLocation.framework */; };
 		84F4A55D1C1991CE002E292A /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F4A55C1C1991CE002E292A /* MapAnnotation.m */; };
@@ -51,6 +52,8 @@
 		848858891C1C43A200992588 /* lab.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lab.pdf; sourceTree = "<group>"; };
 		8488588A1C1C43A200992588 /* mt.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mt.pdf; sourceTree = "<group>"; };
 		8488588B1C1C43A200992588 /* nsstring.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = nsstring.pdf; sourceTree = "<group>"; };
+		848858921C1C47D200992588 /* GetDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetDataViewController.h; sourceTree = "<group>"; };
+		848858931C1C47D200992588 /* GetDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetDataViewController.m; sourceTree = "<group>"; };
 		84F4A5571C19912F002E292A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		84F4A5591C199137002E292A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		84F4A55B1C1991CE002E292A /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				848858821C1C393000992588 /* SingerTableViewController.h */,
 				848858831C1C393000992588 /* SingerTableViewController.m */,
 				84FD5FE91C13049100B4B703 /* Main.storyboard */,
+				848858921C1C47D200992588 /* GetDataViewController.h */,
+				848858931C1C47D200992588 /* GetDataViewController.m */,
 				84F4A55E1C19A232002E292A /* TopHitTableViewController.h */,
 				84F4A55F1C19A232002E292A /* TopHitTableViewController.m */,
 				84F4A55B1C1991CE002E292A /* MapAnnotation.h */,
@@ -294,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848858941C1C47D200992588 /* GetDataViewController.m in Sources */,
 				84FD5FE81C13049000B4B703 /* ViewController.m in Sources */,
 				84F4A5601C19A232002E292A /* TopHitTableViewController.m in Sources */,
 				84FD5FE51C13049000B4B703 /* AppDelegate.m in Sources */,

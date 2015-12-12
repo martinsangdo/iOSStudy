@@ -19,6 +19,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     mapView.mapType = MKMapTypeHybrid;
+    sendingPackage = [NSUserDefaults standardUserDefaults];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    [sendingPackage setObject:txtLat.text forKey:@"gotit"];
 }
 
 - (void)didReceiveMemoryWarning {

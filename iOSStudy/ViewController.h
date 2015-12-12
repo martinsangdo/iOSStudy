@@ -15,6 +15,7 @@
     __weak IBOutlet UITextField *txtLat;
     __weak IBOutlet UITextField *txtLon;
     __weak IBOutlet MKMapView *mapView;
+    NSUserDefaults *sendingPackage;
 }
 
 - (IBAction)searchLocation:(id)sender;
