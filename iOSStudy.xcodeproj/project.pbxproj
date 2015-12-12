@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848858801C1C390A00992588 /* images1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8488587E1C1C390A00992588 /* images1.jpeg */; };
+		848858811C1C390A00992588 /* images2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8488587F1C1C390A00992588 /* images2.jpeg */; };
+		848858841C1C393000992588 /* SingerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848858831C1C393000992588 /* SingerTableViewController.m */; };
 		84F4A5581C19912F002E292A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F4A5571C19912F002E292A /* MapKit.framework */; };
 		84F4A55A1C199137002E292A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F4A5591C199137002E292A /* CoreLocation.framework */; };
 		84F4A55D1C1991CE002E292A /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F4A55C1C1991CE002E292A /* MapAnnotation.m */; };
@@ -32,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8488587E1C1C390A00992588 /* images1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images1.jpeg; sourceTree = "<group>"; };
+		8488587F1C1C390A00992588 /* images2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images2.jpeg; sourceTree = "<group>"; };
+		848858821C1C393000992588 /* SingerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingerTableViewController.h; sourceTree = "<group>"; };
+		848858831C1C393000992588 /* SingerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingerTableViewController.m; sourceTree = "<group>"; };
 		84F4A5571C19912F002E292A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		84F4A5591C199137002E292A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		84F4A55B1C1991CE002E292A /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
@@ -77,6 +84,8 @@
 		848CF9E31C16EE4000CDBBF6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				848858821C1C393000992588 /* SingerTableViewController.h */,
+				848858831C1C393000992588 /* SingerTableViewController.m */,
 				84FD5FE91C13049100B4B703 /* Main.storyboard */,
 				84F4A55E1C19A232002E292A /* TopHitTableViewController.h */,
 				84F4A55F1C19A232002E292A /* TopHitTableViewController.m */,
@@ -124,6 +133,8 @@
 		84FD5FDF1C13049000B4B703 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8488587E1C1C390A00992588 /* images1.jpeg */,
+				8488587F1C1C390A00992588 /* images2.jpeg */,
 				84FD5FE01C13049000B4B703 /* Info.plist */,
 				84FD5FE11C13049000B4B703 /* main.m */,
 				84FD60051C1306A600B4B703 /* File */,
@@ -228,7 +239,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848858811C1C390A00992588 /* images2.jpeg in Resources */,
 				84FD60061C1306A600B4B703 /* File in Resources */,
+				848858801C1C390A00992588 /* images1.jpeg in Resources */,
 				84FD5FEB1C13049100B4B703 /* Main.storyboard in Resources */,
 				84FD5FF01C13049100B4B703 /* LaunchScreen.xib in Resources */,
 				84FD5FED1C13049100B4B703 /* Images.xcassets in Resources */,
@@ -252,6 +265,7 @@
 				84FD5FE81C13049000B4B703 /* ViewController.m in Sources */,
 				84F4A5601C19A232002E292A /* TopHitTableViewController.m in Sources */,
 				84FD5FE51C13049000B4B703 /* AppDelegate.m in Sources */,
+				848858841C1C393000992588 /* SingerTableViewController.m in Sources */,
 				84FD5FE21C13049000B4B703 /* main.m in Sources */,
 				84F4A55D1C1991CE002E292A /* MapAnnotation.m in Sources */,
 			);

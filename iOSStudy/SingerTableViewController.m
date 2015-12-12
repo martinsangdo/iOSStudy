@@ -1,19 +1,19 @@
 //
-//  TopHitTableViewController.m
+//  SingerTableViewController.m
 //  iOSStudy
 //
-//  Created by PC19 on 12/10/15.
+//  Created by PC19 on 12/12/15.
 //  Copyright (c) 2015 OrganizationName. All rights reserved.
 //
 
-#import "TopHitTableViewController.h"
+#import "SingerTableViewController.h"
 
-@interface TopHitTableViewController ()
+@interface SingerTableViewController ()
 
 @end
 
-@implementation TopHitTableViewController
-NSMutableArray *songList;
+@implementation SingerTableViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -22,7 +22,7 @@ NSMutableArray *songList;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    songList = [[NSMutableArray alloc] initWithObjects:@"song 1", @"song 2", nil];
+    singerList = [[NSMutableArray alloc]initWithObjects:@"images1", @"images2", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,17 +39,31 @@ NSMutableArray *songList;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [songList count];
+    return [singerList count];
 }
 
-//put data to each cell, loop when
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellId = @"Cell";
+    static NSString *cellId = @"anycell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    // Configure the cell...
     if (cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
+        
     }
-    cell.textLabel.text = [songList objectAtIndex:indexPath.row];
+    NSString *imgName = [NSString stringWithFormat:@"%@.jpeg", [singerList objectAtIndex:indexPath.row]];
+    NSString *detail = [NSString stringWithFormat:@"Songs of %@", [singerList objectAtIndex:indexPath.row]];
+    
+    cell.textLabel.text = [singerList objectAtIndex:indexPath.row];
+    cell.detailTextLabel.text = detail;
+    
+    UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 50, 50)];
+    imgView.image = [UIImage imageNamed:imgName];
+    cell.imageView.image = imgView.image;
+    
+    UIButton *detailButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    detailButton.frame = CGRectMake(280, 0, 50, 50);
+    [cell addSubview:detailButton];
     
     return cell;
 }
@@ -59,7 +73,6 @@ NSMutableArray *songList;
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
-    
     return YES;
 }
 */
