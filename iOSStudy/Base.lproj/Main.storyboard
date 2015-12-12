@@ -98,8 +98,8 @@
                             <outlet property="delegate" destination="njZ-mW-2vt" id="mK3-d5-lEq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Top ten" id="9ER-J9-aSO">
-                        <barButtonItem key="backBarButtonItem" title="Back 2" id="2hc-X8-V8d"/>
+                    <navigationItem key="navigationItem" title="Top ten" id="9ER-J9-aSO" userLabel="ffgfdgs">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="2hc-X8-V8d"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
