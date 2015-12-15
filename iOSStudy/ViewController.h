@@ -16,10 +16,12 @@
     __weak IBOutlet UITextField *txtLon;
     __weak IBOutlet MKMapView *mapView;
     NSUserDefaults *sendingPackage;
+    NSUserDefaults *listnamePackage;
 }
 
 - (IBAction)searchLocation:(id)sender;
-
+- (IBAction)showKhacVietList:(id)sender;
+- (IBAction)showTrungQuanList:(id)sender;
 
 @end
 

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MapAnnotation.h"
+#import "Constant.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     mapView.mapType = MKMapTypeHybrid;
     sendingPackage = [NSUserDefaults standardUserDefaults];
+    listnamePackage = [NSUserDefaults standardUserDefaults];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -38,5 +40,13 @@
     MapAnnotation *newAnnotation = [[MapAnnotation alloc] initWithTitle:@"here" addCoordinate:location];
     [mapView addAnnotation:newAnnotation];
     [self.view addSubview:mapView];
+}
+
+- (IBAction)showKhacVietList:(id)sender {
+    [listnamePackage setObject:KHACVIET forKey:SINGER_KEYNAME];
+}
+
+- (IBAction)showTrungQuanList:(id)sender {
+    [listnamePackage setObject:TRUNGQUAN forKey:SINGER_KEYNAME];
 }
 @end

@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GjI-sD-jbc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="GjI-sD-jbc">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Song List View Controller-->
         <scene sceneID="0ak-ey-hQs">
             <objects>
-                <tableViewController id="7HS-Pc-5ME" sceneMemberID="viewController">
+                <tableViewController id="7HS-Pc-5ME" customClass="SongListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MVv-5m-1FX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ohj-HA-G2w">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" id="ohj-HA-G2w">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ohj-HA-G2w" id="mmw-X6-3x3">
@@ -28,11 +27,12 @@
                             <outlet property="delegate" destination="7HS-Pc-5ME" id="X0b-UK-cPa"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="tzk-kG-uep"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3M-V9-Exv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2482" y="-345"/>
+            <point key="canvasLocation" x="2332" y="-379"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -104,10 +104,18 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNr-Pd-GAx">
                                 <rect key="frame" x="20" y="184" width="115" height="30"/>
                                 <state key="normal" title="KhacViet Top Hit"/>
+                                <connections>
+                                    <action selector="showKhacVietList:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tes-NS-EyT"/>
+                                    <segue destination="7HS-Pc-5ME" kind="push" id="36I-2N-dfH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1V-EB-hzE">
                                 <rect key="frame" x="10" y="227" width="134" height="30"/>
                                 <state key="normal" title="Trung Quan Top Hit"/>
+                                <connections>
+                                    <action selector="showTrungQuanList:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Xdw-ID-hyh"/>
+                                    <segue destination="7HS-Pc-5ME" kind="push" id="1nG-qZ-HtG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -252,5 +260,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Fuo-RF-QfK"/>
+        <segue reference="36I-2N-dfH"/>
     </inferredMetricsTieBreakers>
 </document>
