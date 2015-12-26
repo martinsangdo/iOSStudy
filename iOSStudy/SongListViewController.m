@@ -66,7 +66,10 @@ NSMutableArray * trungquanList;
     
     return cell;
 }
-
+//when click on 1 item
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    //Entry *entry = [self.entries objectAtIndex:[indexPath row]];
+}
 
 /*
 // Override to support conditional editing of the table view.
