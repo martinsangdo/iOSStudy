@@ -22,6 +22,7 @@
 - (IBAction)searchLocation:(id)sender;
 - (IBAction)showKhacVietList:(id)sender;
 - (IBAction)showTrungQuanList:(id)sender;
+- (IBAction)showUpVC:(id)sender;
 
 @end
 

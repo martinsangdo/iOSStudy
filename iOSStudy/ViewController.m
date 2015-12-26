@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MapAnnotation.h"
 #import "Constant.h"
+#import "GetDataViewController.h"
 
 @interface ViewController ()
 
@@ -48,5 +49,10 @@
 
 - (IBAction)showTrungQuanList:(id)sender {
     [listnamePackage setObject:TRUNGQUAN forKey:SINGER_KEYNAME];
+}
+//open another view controller by code
+- (IBAction)showUpVC:(id)sender {
+    GetDataViewController *v2Controller = [self.storyboard instantiateViewControllerWithIdentifier:@"v2"];
+    [self.navigationController pushViewController:v2Controller animated:true];
 }
 @end

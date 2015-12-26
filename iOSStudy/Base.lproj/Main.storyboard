@@ -117,6 +117,15 @@
                                     <segue destination="7HS-Pc-5ME" kind="push" id="1nG-qZ-HtG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZd-05-RAN">
+                                <rect key="frame" x="20" y="146" width="127" height="30"/>
+                                <state key="normal" title="Open VC by code">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showUpVC:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uhN-PT-BI9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -135,7 +144,7 @@
         <!--Get Data View Controller-->
         <scene sceneID="O1u-t8-MsE">
             <objects>
-                <viewController id="FJV-Lm-OgC" customClass="GetDataViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="v2" id="FJV-Lm-OgC" customClass="GetDataViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ls7-4z-Go2"/>
                         <viewControllerLayoutGuide type="bottom" id="1xP-wl-0M8"/>
