@@ -15,6 +15,7 @@
 
 @end
 
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -53,6 +54,7 @@
 //open another view controller by code
 - (IBAction)showUpVC:(id)sender {
     GetDataViewController *v2Controller = [self.storyboard instantiateViewControllerWithIdentifier:@"v2"];
+    v2Controller.commonString = @"333";
     [self.navigationController pushViewController:v2Controller animated:true];
 }
 @end

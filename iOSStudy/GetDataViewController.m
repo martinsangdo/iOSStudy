@@ -13,13 +13,14 @@
 @end
 
 @implementation GetDataViewController
+@synthesize commonString;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    gotPackage = [NSUserDefaults standardUserDefaults];
-    lblGotData.text = [gotPackage objectForKey:@"gotit"];
-    
+    //gotPackage = [NSUserDefaults standardUserDefaults];
+    //lblGotData.text = [gotPackage objectForKey:@"gotit"];
+    lblGotData.text = self.commonString;
 }
 
 - (void)didReceiveMemoryWarning {

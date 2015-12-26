@@ -14,4 +14,6 @@
     NSUserDefaults *gotPackage;
 }
 
+@property NSString* commonString;
+
 @end
