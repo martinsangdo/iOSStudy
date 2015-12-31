@@ -29,6 +29,7 @@
 		84F4A55A1C199137002E292A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F4A5591C199137002E292A /* CoreLocation.framework */; };
 		84F4A55D1C1991CE002E292A /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F4A55C1C1991CE002E292A /* MapAnnotation.m */; };
 		84F4A5601C19A232002E292A /* TopHitTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F4A55F1C19A232002E292A /* TopHitTableViewController.m */; };
+		84F7AF6C1C35412F0024C982 /* bai tap cuu chuong.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84F7AF6B1C35412F0024C982 /* bai tap cuu chuong.pdf */; };
 		84FD5FE21C13049000B4B703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FE11C13049000B4B703 /* main.m */; };
 		84FD5FE51C13049000B4B703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FE41C13049000B4B703 /* AppDelegate.m */; };
 		84FD5FE81C13049000B4B703 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FE71C13049000B4B703 /* ViewController.m */; };
@@ -78,6 +79,7 @@
 		84F4A55C1C1991CE002E292A /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
 		84F4A55E1C19A232002E292A /* TopHitTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopHitTableViewController.h; sourceTree = "<group>"; };
 		84F4A55F1C19A232002E292A /* TopHitTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopHitTableViewController.m; sourceTree = "<group>"; };
+		84F7AF6B1C35412F0024C982 /* bai tap cuu chuong.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "bai tap cuu chuong.pdf"; sourceTree = "<group>"; };
 		84FD5FDC1C13049000B4B703 /* iOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD5FE01C13049000B4B703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FD5FE11C13049000B4B703 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		848858851C1C438900992588 /* docs */ = {
 			isa = PBXGroup;
 			children = (
+				84F7AF6B1C35412F0024C982 /* bai tap cuu chuong.pdf */,
 				8488451B1C20941D00242F17 /* 15Dec2015 */,
 				848858861C1C43A200992588 /* bai tap dua xe.pdf */,
 				848858871C1C43A200992588 /* dh.pdf */,
@@ -315,6 +318,7 @@
 				848858911C1C43A200992588 /* nsstring.pdf in Resources */,
 				848845281C20941D00242F17 /* v4.png in Resources */,
 				84FD60061C1306A600B4B703 /* File in Resources */,
+				84F7AF6C1C35412F0024C982 /* bai tap cuu chuong.pdf in Resources */,
 				848858801C1C390A00992588 /* images1.jpeg in Resources */,
 				84FD5FEB1C13049100B4B703 /* Main.storyboard in Resources */,
 				8488588E1C1C43A200992588 /* dua xe.rtf in Resources */,
