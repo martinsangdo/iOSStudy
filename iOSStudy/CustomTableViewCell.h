@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomTableViewCell : UITableViewCell
+
+//MUST connect to CustomCell, not File's owner
 @property (weak, nonatomic) IBOutlet UIImageView *cellImg;
 @property (weak, nonatomic) IBOutlet UILabel *cellSingerName;
+
 @property (weak, nonatomic) IBOutlet UILabel *cellDesc;
+
+
 
 @end

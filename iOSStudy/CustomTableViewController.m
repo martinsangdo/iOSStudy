@@ -64,6 +64,11 @@ NSMutableArray * descList;
     if (customCell == nil){
         //initialize cell at the first time app launches
         NSArray * nib = [[NSBundle mainBundle] loadNibNamed:@"CustomTableCell" owner:self options:nil]; //*.xib filename
+        /*
+         in case of error in above line:
+         http://stackoverflow.com/questions/3088059/what-does-this-mean-nsunknownkeyexception-reason-this-class-is-not-key
+         
+         */
         customCell = [nib objectAtIndex:0];
     }
     //assign value to cell
@@ -75,6 +80,9 @@ NSMutableArray * descList;
     return customCell;
 }
 
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 90;
+}
 
 /*
 // Override to support conditional editing of the table view.
