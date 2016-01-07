@@ -37,6 +37,8 @@
 		84F4A55D1C1991CE002E292A /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F4A55C1C1991CE002E292A /* MapAnnotation.m */; };
 		84F4A5601C19A232002E292A /* TopHitTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F4A55F1C19A232002E292A /* TopHitTableViewController.m */; };
 		84F7AF6C1C35412F0024C982 /* bai tap cuu chuong.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84F7AF6B1C35412F0024C982 /* bai tap cuu chuong.pdf */; };
+		84FD36731C3E7ECA005BE592 /* Sections.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84FD36721C3E7ECA005BE592 /* Sections.pdf */; };
+		84FD36771C3E7FA4005BE592 /* MultiSectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD36761C3E7FA4005BE592 /* MultiSectionTableViewController.m */; };
 		84FD5FE21C13049000B4B703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FE11C13049000B4B703 /* main.m */; };
 		84FD5FE51C13049000B4B703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FE41C13049000B4B703 /* AppDelegate.m */; };
 		84FD5FE81C13049000B4B703 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FE71C13049000B4B703 /* ViewController.m */; };
@@ -96,6 +98,9 @@
 		84F4A55E1C19A232002E292A /* TopHitTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopHitTableViewController.h; sourceTree = "<group>"; };
 		84F4A55F1C19A232002E292A /* TopHitTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopHitTableViewController.m; sourceTree = "<group>"; };
 		84F7AF6B1C35412F0024C982 /* bai tap cuu chuong.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "bai tap cuu chuong.pdf"; sourceTree = "<group>"; };
+		84FD36721C3E7ECA005BE592 /* Sections.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sections.pdf; sourceTree = "<group>"; };
+		84FD36751C3E7FA4005BE592 /* MultiSectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSectionTableViewController.h; sourceTree = "<group>"; };
+		84FD36761C3E7FA4005BE592 /* MultiSectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSectionTableViewController.m; sourceTree = "<group>"; };
 		84FD5FDC1C13049000B4B703 /* iOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD5FE01C13049000B4B703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FD5FE11C13049000B4B703 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -170,6 +175,7 @@
 		848858851C1C438900992588 /* docs */ = {
 			isa = PBXGroup;
 			children = (
+				84FD36721C3E7ECA005BE592 /* Sections.pdf */,
 				84074E551C3BE5AC0056CDD2 /* tableview.rtf */,
 				84074E451C3BD63B0056CDD2 /* PHAN 1.pdf */,
 				84074E461C3BD63B0056CDD2 /* PHAN 2.pdf */,
@@ -203,6 +209,15 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		84FD36741C3E7F7F005BE592 /* TableView3Sections */ = {
+			isa = PBXGroup;
+			children = (
+				84FD36751C3E7FA4005BE592 /* MultiSectionTableViewController.h */,
+				84FD36761C3E7FA4005BE592 /* MultiSectionTableViewController.m */,
+			);
+			name = TableView3Sections;
+			sourceTree = "<group>";
+		};
 		84FD5FD31C13049000B4B703 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +241,7 @@
 		84FD5FDE1C13049000B4B703 /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				84FD36741C3E7F7F005BE592 /* TableView3Sections */,
 				84074E491C3BD8F40056CDD2 /* CustomTableCell */,
 				848CF9E31C16EE4000CDBBF6 /* Views */,
 				84FD5FE31C13049000B4B703 /* AppDelegate.h */,
@@ -350,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FD36731C3E7ECA005BE592 /* Sections.pdf in Resources */,
 				848858901C1C43A200992588 /* mt.pdf in Resources */,
 				848845261C20941D00242F17 /* v2.png in Resources */,
 				848845271C20941D00242F17 /* v3.png in Resources */,
@@ -400,6 +417,7 @@
 				848845081C20941D00242F17 /* SongListViewController.m in Sources */,
 				84074E4C1C3BD9FE0056CDD2 /* CustomTableViewController.m in Sources */,
 				84FD5FE21C13049000B4B703 /* main.m in Sources */,
+				84FD36771C3E7FA4005BE592 /* MultiSectionTableViewController.m in Sources */,
 				8488450B1C20941D00242F17 /* Constant.m in Sources */,
 				84F4A55D1C1991CE002E292A /* MapAnnotation.m in Sources */,
 			);
