@@ -39,6 +39,7 @@
 		84F7AF6C1C35412F0024C982 /* bai tap cuu chuong.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84F7AF6B1C35412F0024C982 /* bai tap cuu chuong.pdf */; };
 		84FD36731C3E7ECA005BE592 /* Sections.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84FD36721C3E7ECA005BE592 /* Sections.pdf */; };
 		84FD36771C3E7FA4005BE592 /* MultiSectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD36761C3E7FA4005BE592 /* MultiSectionTableViewController.m */; };
+		84FD36791C3E866C005BE592 /* Tìm Kiếm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84FD36781C3E866B005BE592 /* Tìm Kiếm.pdf */; };
 		84FD5FE21C13049000B4B703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FE11C13049000B4B703 /* main.m */; };
 		84FD5FE51C13049000B4B703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FE41C13049000B4B703 /* AppDelegate.m */; };
 		84FD5FE81C13049000B4B703 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5FE71C13049000B4B703 /* ViewController.m */; };
@@ -101,6 +102,7 @@
 		84FD36721C3E7ECA005BE592 /* Sections.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Sections.pdf; sourceTree = "<group>"; };
 		84FD36751C3E7FA4005BE592 /* MultiSectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiSectionTableViewController.h; sourceTree = "<group>"; };
 		84FD36761C3E7FA4005BE592 /* MultiSectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiSectionTableViewController.m; sourceTree = "<group>"; };
+		84FD36781C3E866B005BE592 /* Tìm Kiếm.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Tìm Kiếm.pdf"; sourceTree = "<group>"; };
 		84FD5FDC1C13049000B4B703 /* iOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD5FE01C13049000B4B703 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FD5FE11C13049000B4B703 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		848858851C1C438900992588 /* docs */ = {
 			isa = PBXGroup;
 			children = (
+				84FD36781C3E866B005BE592 /* Tìm Kiếm.pdf */,
 				84FD36721C3E7ECA005BE592 /* Sections.pdf */,
 				84074E551C3BE5AC0056CDD2 /* tableview.rtf */,
 				84074E451C3BD63B0056CDD2 /* PHAN 1.pdf */,
@@ -388,6 +391,7 @@
 				848845251C20941D00242F17 /* v1.png in Resources */,
 				84FD5FF01C13049100B4B703 /* LaunchScreen.xib in Resources */,
 				8488588F1C1C43A200992588 /* lab.pdf in Resources */,
+				84FD36791C3E866C005BE592 /* Tìm Kiếm.pdf in Resources */,
 				84FD5FED1C13049100B4B703 /* Images.xcassets in Resources */,
 				848845241C20941D00242F17 /* 1.png in Resources */,
 				84074E4E1C3BDA680056CDD2 /* tree-oak.jpg in Resources */,

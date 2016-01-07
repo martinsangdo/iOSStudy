@@ -17,6 +17,8 @@ NSMutableArray * singerList;
 NSMutableArray * imageList;
 NSMutableArray * descList;
 
+NSMutableArray * resultList;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -42,23 +44,29 @@ NSMutableArray * descList;
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 3;
+//    return 3;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    switch (section) {
-        case 0:
-            return singerList.count;
-            break;
-        case 1:
-            return imageList.count;
-            break;
-        case 2:
-            return descList.count;
-            break;
-    };
-    return 0;
+//    switch (section) {
+//        case 0:
+//            return singerList.count;
+//            break;
+//        case 1:
+//            return imageList.count;
+//            break;
+//        case 2:
+//            return descList.count;
+//            break;
+//    };
+    
+    if (tableView ==self.searchDisplayController.searchResultsTableView){
+        return resultList.count;
+    } else {
+        return singerList.count;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -67,18 +75,29 @@ NSMutableArray * descList;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     
     // Configure the cell...
-    switch (indexPath.section) {
-        case 0:
+//    switch (indexPath.section) {
+//        case 0:
+//            cell.textLabel.text = [singerList objectAtIndex:indexPath.row];
+//            break;
+//        case 1:
+//            cell.textLabel.text = [imageList objectAtIndex:indexPath.row];
+//            break;
+//        case 2:
+//            cell.textLabel.text = [descList objectAtIndex:indexPath.row];
+//            break;
+//    };
+    // Configure the cell...
+    if (cell == nil){
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellId];
+        
+    }
+    
+        if (tableView ==self.searchDisplayController.searchResultsTableView && indexPath.row >= 0&& resultList.count > 0){
+            cell.textLabel.text = [resultList objectAtIndex:indexPath.row];
+        } else {
             cell.textLabel.text = [singerList objectAtIndex:indexPath.row];
-            break;
-        case 1:
-            cell.textLabel.text = [imageList objectAtIndex:indexPath.row];
-            break;
-        case 2:
-            cell.textLabel.text = [descList objectAtIndex:indexPath.row];
-            break;
-    };
-
+        }
+    resultList = [NSMutableArray arrayWithCapacity:[singerList count]];
     
     return cell;
 }
@@ -97,7 +116,16 @@ NSMutableArray * descList;
     }
     return titleName;
 }
+- (void)filterContent:(NSString*)keyword scope:(NSString*)scope{
+    [resultList removeAllObjects];
+    NSPredicate * resultPredicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@", keyword];
+    resultList = [NSMutableArray arrayWithArray:[singerList filteredArrayUsingPredicate:resultPredicate]];
+}
 
+-(BOOL)searchDisplayController:(UISearchDisplayController*)controller shouldReloadTableForSearchString:(NSString *)searchString{
+    [self filterContent:searchString scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:[self.searchDisplayController.searchBar selectedScopeButtonIndex]]];
+    return YES;
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
