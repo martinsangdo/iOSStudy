@@ -70,7 +70,7 @@ NSMutableArray * resultList;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellId = @"CustomCell";//declared in .xib
+    static NSString *cellId = @"CustomCell";//must declare in .xib
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     
