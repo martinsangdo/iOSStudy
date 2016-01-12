@@ -16,6 +16,7 @@
 @synthesize commonString;
 
 NSMutableArray * pickerList;
+NSMutableArray * pickerList2;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,22 +25,35 @@ NSMutableArray * pickerList;
     //lblGotData.text = [gotPackage objectForKey:@"gotit"];
     //lblGotData.text = self.commonString;
     pickerList = [[NSMutableArray alloc] initWithObjects:@"iOS", @"Android", @"Web", nil];
+    pickerList2 = [[NSMutableArray alloc] initWithObjects:@"Beginner", @"Pro", @"Expert", @"Native", nil];
     myPicker.delegate = self;
 }
-
+//set column of picker view
 -(NSInteger)numberOfComponentsInPickerView: (UIPickerView*)pickerView{
-    return 1;
+//    return 1;
+    return 2;
 }
 -(NSInteger)pickerView:(UIPickerView*)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return pickerList.count;
+//    return pickerList.count;
+    if (component == 0){
+        return pickerList.count;
+    } else {
+        return pickerList2.count;
+    }
+    return 0;
 }
 -(void)pickerView:(UIPickerView*)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     int selectedIndex = [myPicker selectedRowInComponent:0];
-    txtPicker.text = [pickerList objectAtIndex:selectedIndex];
+    //txtPicker.text = [pickerList objectAtIndex:selectedIndex];
 }
 -(NSString*)pickerView:(UIPickerView*)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return [pickerList objectAtIndex:row];
-    
+//    return [pickerList objectAtIndex:row];
+    if (component == 0){
+        return [pickerList objectAtIndex:row];
+    } else {
+        return [pickerList2 objectAtIndex:row];
+    }
+    return 0;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
