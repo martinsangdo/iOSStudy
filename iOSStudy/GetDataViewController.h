@@ -12,6 +12,9 @@
     
     __weak IBOutlet UILabel *lblGotData;
     NSUserDefaults *gotPackage;
+    
+    __weak IBOutlet UIPickerView *myPicker;
+    __weak IBOutlet UILabel *txtPicker;
 }
 
 @property NSString* commonString;

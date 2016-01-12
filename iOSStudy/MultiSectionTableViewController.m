@@ -117,7 +117,7 @@ NSMutableArray * resultList;
     return titleName;
 }
 - (void)filterContent:(NSString*)keyword scope:(NSString*)scope{
-    [resultList removeAllObjects];
+    [resultList removeAllObjects];      //reset data
     NSPredicate * resultPredicate = [NSPredicate predicateWithFormat:@"SELF contains[c] %@", keyword];
     resultList = [NSMutableArray arrayWithArray:[singerList filteredArrayUsingPredicate:resultPredicate]];
 }
