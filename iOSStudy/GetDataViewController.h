@@ -15,6 +15,7 @@
     
     __weak IBOutlet UIPickerView *myPicker;
     __weak IBOutlet UILabel *txtPicker;
+    __weak IBOutlet UIPickerView *pickerJackbot;
 }
 
 @property NSString* commonString;

@@ -14,6 +14,11 @@
 		84074E511C3BDE960056CDD2 /* CustomTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84074E501C3BDE960056CDD2 /* CustomTableCell.xib */; };
 		84074E541C3BDF5B0056CDD2 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84074E531C3BDF5B0056CDD2 /* CustomTableViewCell.m */; };
 		84074E561C3BE5AC0056CDD2 /* tableview.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 84074E551C3BE5AC0056CDD2 /* tableview.rtf */; };
+		842E3C101C451D5A00DE7E65 /* bai tap jackbot.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 842E3C0F1C451D5A00DE7E65 /* bai tap jackbot.pdf */; };
+		842E3C211C4527C700DE7E65 /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842E3C1D1C4527C700DE7E65 /* apple.jpg */; };
+		842E3C221C4527C700DE7E65 /* cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = 842E3C1E1C4527C700DE7E65 /* cherry.png */; };
+		842E3C231C4527C700DE7E65 /* dollar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 842E3C1F1C4527C700DE7E65 /* dollar.jpg */; };
+		842E3C241C4527C700DE7E65 /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 842E3C201C4527C700DE7E65 /* seven.png */; };
 		848845081C20941D00242F17 /* SongListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848845071C20941D00242F17 /* SongListViewController.m */; };
 		8488450B1C20941D00242F17 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 8488450A1C20941D00242F17 /* Constant.m */; };
 		848845241C20941D00242F17 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8488451D1C20941D00242F17 /* 1.png */; };
@@ -71,6 +76,11 @@
 		84074E521C3BDF5B0056CDD2 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		84074E531C3BDF5B0056CDD2 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		84074E551C3BE5AC0056CDD2 /* tableview.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = tableview.rtf; sourceTree = "<group>"; };
+		842E3C0F1C451D5A00DE7E65 /* bai tap jackbot.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "bai tap jackbot.pdf"; sourceTree = "<group>"; };
+		842E3C1D1C4527C700DE7E65 /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
+		842E3C1E1C4527C700DE7E65 /* cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cherry.png; sourceTree = "<group>"; };
+		842E3C1F1C4527C700DE7E65 /* dollar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dollar.jpg; sourceTree = "<group>"; };
+		842E3C201C4527C700DE7E65 /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
 		848845061C20941D00242F17 /* SongListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongListViewController.h; sourceTree = "<group>"; };
 		848845071C20941D00242F17 /* SongListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongListViewController.m; sourceTree = "<group>"; };
 		848845091C20941D00242F17 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
@@ -156,6 +166,10 @@
 		84074E4F1C3BDA6C0056CDD2 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				842E3C1D1C4527C700DE7E65 /* apple.jpg */,
+				842E3C1E1C4527C700DE7E65 /* cherry.png */,
+				842E3C1F1C4527C700DE7E65 /* dollar.jpg */,
+				842E3C201C4527C700DE7E65 /* seven.png */,
 				8488587E1C1C390A00992588 /* images1.jpeg */,
 				8488587F1C1C390A00992588 /* images2.jpeg */,
 				84074E4D1C3BDA680056CDD2 /* tree-oak.jpg */,
@@ -179,6 +193,7 @@
 		848858851C1C438900992588 /* docs */ = {
 			isa = PBXGroup;
 			children = (
+				842E3C0F1C451D5A00DE7E65 /* bai tap jackbot.pdf */,
 				84FA40281C41238800D1BCB3 /* lab tim kiem.pdf */,
 				84FD36781C3E866B005BE592 /* Tìm Kiếm.pdf */,
 				84FD36721C3E7ECA005BE592 /* Sections.pdf */,
@@ -373,11 +388,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FD36731C3E7ECA005BE592 /* Sections.pdf in Resources */,
+				842E3C231C4527C700DE7E65 /* dollar.jpg in Resources */,
 				848858901C1C43A200992588 /* mt.pdf in Resources */,
+				842E3C101C451D5A00DE7E65 /* bai tap jackbot.pdf in Resources */,
 				848845261C20941D00242F17 /* v2.png in Resources */,
 				848845271C20941D00242F17 /* v3.png in Resources */,
 				84074E511C3BDE960056CDD2 /* CustomTableCell.xib in Resources */,
 				84074E481C3BD63B0056CDD2 /* PHAN 2.pdf in Resources */,
+				842E3C211C4527C700DE7E65 /* apple.jpg in Resources */,
 				8488588C1C1C43A200992588 /* bai tap dua xe.pdf in Resources */,
 				848858811C1C390A00992588 /* images2.jpeg in Resources */,
 				8488588D1C1C43A200992588 /* dh.pdf in Resources */,
@@ -394,9 +412,11 @@
 				848845291C20941D00242F17 /* v5.png in Resources */,
 				848845251C20941D00242F17 /* v1.png in Resources */,
 				84FD5FF01C13049100B4B703 /* LaunchScreen.xib in Resources */,
+				842E3C221C4527C700DE7E65 /* cherry.png in Resources */,
 				8488588F1C1C43A200992588 /* lab.pdf in Resources */,
 				84FD36791C3E866C005BE592 /* Tìm Kiếm.pdf in Resources */,
 				84FD5FED1C13049100B4B703 /* Images.xcassets in Resources */,
+				842E3C241C4527C700DE7E65 /* seven.png in Resources */,
 				848845241C20941D00242F17 /* 1.png in Resources */,
 				84074E4E1C3BDA680056CDD2 /* tree-oak.jpg in Resources */,
 			);
