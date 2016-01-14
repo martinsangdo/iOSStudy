@@ -28,7 +28,7 @@ NSString *strUlr = @"http://216.240.43.69/campus500/getFoldersLimit?offset=0&len
     mapView.mapType = MKMapTypeHybrid;
     sendingPackage = [NSUserDefaults standardUserDefaults];
     listnamePackage = [NSUserDefaults standardUserDefaults];
-    [self getNParseJSON];
+    //[self getNParseJSON];
 }
 
 -(void)getNParseJSON{

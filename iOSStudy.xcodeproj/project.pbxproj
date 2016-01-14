@@ -37,6 +37,13 @@
 		848858901C1C43A200992588 /* mt.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8488588A1C1C43A200992588 /* mt.pdf */; };
 		848858911C1C43A200992588 /* nsstring.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8488588B1C1C43A200992588 /* nsstring.pdf */; };
 		848858941C1C47D200992588 /* GetDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848858931C1C47D200992588 /* GetDataViewController.m */; };
+		8495A1F21C47B58F00639857 /*  1.png in Resources */ = {isa = PBXBuildFile; fileRef = 8495A1EC1C47B58F00639857 /*  1.png */; };
+		8495A1F31C47B58F00639857 /*  2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8495A1ED1C47B58F00639857 /*  2.png */; };
+		8495A1F41C47B58F00639857 /* .com.apple.timemachine.supported in Resources */ = {isa = PBXBuildFile; fileRef = 8495A1EE1C47B58F00639857 /* .com.apple.timemachine.supported */; };
+		8495A1F51C47B58F00639857 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 8495A1EF1C47B58F00639857 /* 4.png */; };
+		8495A1F61C47B58F00639857 /* cell_coll.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 8495A1F01C47B58F00639857 /* cell_coll.rtfd */; };
+		8495A1F71C47B58F00639857 /* collecionview_Change_cell.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8495A1F11C47B58F00639857 /* collecionview_Change_cell.pdf */; };
+		8495A1FB1C47B91E00639857 /* ImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8495A1FA1C47B91E00639857 /* ImageCollectionViewController.m */; };
 		84F4A5581C19912F002E292A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F4A5571C19912F002E292A /* MapKit.framework */; };
 		84F4A55A1C199137002E292A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F4A5591C199137002E292A /* CoreLocation.framework */; };
 		84F4A55D1C1991CE002E292A /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F4A55C1C1991CE002E292A /* MapAnnotation.m */; };
@@ -103,6 +110,14 @@
 		8488588B1C1C43A200992588 /* nsstring.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = nsstring.pdf; sourceTree = "<group>"; };
 		848858921C1C47D200992588 /* GetDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetDataViewController.h; sourceTree = "<group>"; };
 		848858931C1C47D200992588 /* GetDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetDataViewController.m; sourceTree = "<group>"; };
+		8495A1EC1C47B58F00639857 /*  1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = " 1.png"; sourceTree = "<group>"; };
+		8495A1ED1C47B58F00639857 /*  2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = " 2.png"; sourceTree = "<group>"; };
+		8495A1EE1C47B58F00639857 /* .com.apple.timemachine.supported */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .com.apple.timemachine.supported; sourceTree = "<group>"; };
+		8495A1EF1C47B58F00639857 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		8495A1F01C47B58F00639857 /* cell_coll.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = cell_coll.rtfd; sourceTree = "<group>"; };
+		8495A1F11C47B58F00639857 /* collecionview_Change_cell.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = collecionview_Change_cell.pdf; sourceTree = "<group>"; };
+		8495A1F91C47B91E00639857 /* ImageCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewController.h; sourceTree = "<group>"; };
+		8495A1FA1C47B91E00639857 /* ImageCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewController.m; sourceTree = "<group>"; };
 		84F4A5571C19912F002E292A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		84F4A5591C199137002E292A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		84F4A55B1C1991CE002E292A /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
@@ -193,6 +208,7 @@
 		848858851C1C438900992588 /* docs */ = {
 			isa = PBXGroup;
 			children = (
+				8495A1EB1C47B58F00639857 /* 14_1 */,
 				842E3C0F1C451D5A00DE7E65 /* bai tap jackbot.pdf */,
 				84FA40281C41238800D1BCB3 /* lab tim kiem.pdf */,
 				84FD36781C3E866B005BE592 /* Tìm Kiếm.pdf */,
@@ -230,6 +246,28 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		8495A1EB1C47B58F00639857 /* 14_1 */ = {
+			isa = PBXGroup;
+			children = (
+				8495A1EC1C47B58F00639857 /*  1.png */,
+				8495A1ED1C47B58F00639857 /*  2.png */,
+				8495A1EE1C47B58F00639857 /* .com.apple.timemachine.supported */,
+				8495A1EF1C47B58F00639857 /* 4.png */,
+				8495A1F01C47B58F00639857 /* cell_coll.rtfd */,
+				8495A1F11C47B58F00639857 /* collecionview_Change_cell.pdf */,
+			);
+			path = 14_1;
+			sourceTree = "<group>";
+		};
+		8495A1F81C47B8FA00639857 /* CollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8495A1F91C47B91E00639857 /* ImageCollectionViewController.h */,
+				8495A1FA1C47B91E00639857 /* ImageCollectionViewController.m */,
+			);
+			name = CollectionViewController;
+			sourceTree = "<group>";
+		};
 		84FD36741C3E7F7F005BE592 /* TableView3Sections */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +300,7 @@
 		84FD5FDE1C13049000B4B703 /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				8495A1F81C47B8FA00639857 /* CollectionViewController */,
 				84FD36741C3E7F7F005BE592 /* TableView3Sections */,
 				84074E491C3BD8F40056CDD2 /* CustomTableCell */,
 				848CF9E31C16EE4000CDBBF6 /* Views */,
@@ -387,11 +426,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8495A1F51C47B58F00639857 /* 4.png in Resources */,
 				84FD36731C3E7ECA005BE592 /* Sections.pdf in Resources */,
 				842E3C231C4527C700DE7E65 /* dollar.jpg in Resources */,
 				848858901C1C43A200992588 /* mt.pdf in Resources */,
 				842E3C101C451D5A00DE7E65 /* bai tap jackbot.pdf in Resources */,
 				848845261C20941D00242F17 /* v2.png in Resources */,
+				8495A1F61C47B58F00639857 /* cell_coll.rtfd in Resources */,
 				848845271C20941D00242F17 /* v3.png in Resources */,
 				84074E511C3BDE960056CDD2 /* CustomTableCell.xib in Resources */,
 				84074E481C3BD63B0056CDD2 /* PHAN 2.pdf in Resources */,
@@ -402,9 +443,12 @@
 				848858911C1C43A200992588 /* nsstring.pdf in Resources */,
 				848845281C20941D00242F17 /* v4.png in Resources */,
 				84074E561C3BE5AC0056CDD2 /* tableview.rtf in Resources */,
+				8495A1F41C47B58F00639857 /* .com.apple.timemachine.supported in Resources */,
 				84FD60061C1306A600B4B703 /* File in Resources */,
 				84FA40291C41238800D1BCB3 /* lab tim kiem.pdf in Resources */,
+				8495A1F21C47B58F00639857 /*  1.png in Resources */,
 				84F7AF6C1C35412F0024C982 /* bai tap cuu chuong.pdf in Resources */,
+				8495A1F71C47B58F00639857 /* collecionview_Change_cell.pdf in Resources */,
 				84074E471C3BD63B0056CDD2 /* PHAN 1.pdf in Resources */,
 				848858801C1C390A00992588 /* images1.jpeg in Resources */,
 				84FD5FEB1C13049100B4B703 /* Main.storyboard in Resources */,
@@ -413,6 +457,7 @@
 				848845251C20941D00242F17 /* v1.png in Resources */,
 				84FD5FF01C13049100B4B703 /* LaunchScreen.xib in Resources */,
 				842E3C221C4527C700DE7E65 /* cherry.png in Resources */,
+				8495A1F31C47B58F00639857 /*  2.png in Resources */,
 				8488588F1C1C43A200992588 /* lab.pdf in Resources */,
 				84FD36791C3E866C005BE592 /* Tìm Kiếm.pdf in Resources */,
 				84FD5FED1C13049100B4B703 /* Images.xcassets in Resources */,
@@ -439,6 +484,7 @@
 				848858941C1C47D200992588 /* GetDataViewController.m in Sources */,
 				84FD5FE81C13049000B4B703 /* ViewController.m in Sources */,
 				84F4A5601C19A232002E292A /* TopHitTableViewController.m in Sources */,
+				8495A1FB1C47B91E00639857 /* ImageCollectionViewController.m in Sources */,
 				84FD5FE51C13049000B4B703 /* AppDelegate.m in Sources */,
 				848858841C1C393000992588 /* SingerTableViewController.m in Sources */,
 				84074E541C3BDF5B0056CDD2 /* CustomTableViewCell.m in Sources */,
