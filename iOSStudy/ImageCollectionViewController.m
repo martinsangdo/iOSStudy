@@ -29,7 +29,7 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // Do any additional setup after loading the view.
 //    stateList = [[NSMutableArray alloc] initWithObjects:@"NO", @"NO", @"NO", @"NO", nil];
-//    imgList = [[NSMutableArray alloc] initWithObjects:@"apple.jpg", @"cherry.png", @"dollar.jpg", @"seven.png", nil];
+    imgList = [[NSMutableArray alloc] initWithObjects:@"apple.jpg", @"cherry.png", @"dollar.jpg", @"seven.png", nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,7 +55,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 4;
+    return imgList.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -67,9 +67,9 @@ static NSString * const reuseIdentifier = @"Cell";
 //    tmp = [[UIImageView alloc] initWithImage:uiImage];
 //    tmp.frame = CGRectMake(0, 0, 70, 70);       //image
 //    
-//    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[imgList objectAtIndex:indexPath.row]]];
+    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:[imgList objectAtIndex:indexPath.row]]];
     
-    cell.backgroundView = [UIColor whiteColor];
+//    cell.backgroundColor = [UIColor whiteColor];
     
     return cell;
 }
