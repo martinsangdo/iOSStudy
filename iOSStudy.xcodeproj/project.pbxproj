@@ -44,6 +44,10 @@
 		8495A1F61C47B58F00639857 /* cell_coll.rtfd in Resources */ = {isa = PBXBuildFile; fileRef = 8495A1F01C47B58F00639857 /* cell_coll.rtfd */; };
 		8495A1F71C47B58F00639857 /* collecionview_Change_cell.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8495A1F11C47B58F00639857 /* collecionview_Change_cell.pdf */; };
 		8495A1FB1C47B91E00639857 /* ImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8495A1FA1C47B91E00639857 /* ImageCollectionViewController.m */; };
+		84F0C7291C4E5778009A01AD /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0C7281C4E5778009A01AD /* AudioViewController.m */; };
+		84F0C72C1C4E58F6009A01AD /* Ve Day Em Remix - Bang Chau Tran.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84F0C72B1C4E58F6009A01AD /* Ve Day Em Remix - Bang Chau Tran.mp3 */; };
+		84F0C72E1C4E5919009A01AD /* SampleVideo_640x360_20mb.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 84F0C72D1C4E5919009A01AD /* SampleVideo_640x360_20mb.mp4 */; };
+		84F0C7301C4E5C84009A01AD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F0C72F1C4E5C84009A01AD /* AVFoundation.framework */; };
 		84F4A5581C19912F002E292A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F4A5571C19912F002E292A /* MapKit.framework */; };
 		84F4A55A1C199137002E292A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F4A5591C199137002E292A /* CoreLocation.framework */; };
 		84F4A55D1C1991CE002E292A /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F4A55C1C1991CE002E292A /* MapAnnotation.m */; };
@@ -118,6 +122,11 @@
 		8495A1F11C47B58F00639857 /* collecionview_Change_cell.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = collecionview_Change_cell.pdf; sourceTree = "<group>"; };
 		8495A1F91C47B91E00639857 /* ImageCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewController.h; sourceTree = "<group>"; };
 		8495A1FA1C47B91E00639857 /* ImageCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewController.m; sourceTree = "<group>"; };
+		84F0C7271C4E5778009A01AD /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		84F0C7281C4E5778009A01AD /* AudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
+		84F0C72B1C4E58F6009A01AD /* Ve Day Em Remix - Bang Chau Tran.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ve Day Em Remix - Bang Chau Tran.mp3"; sourceTree = "<group>"; };
+		84F0C72D1C4E5919009A01AD /* SampleVideo_640x360_20mb.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleVideo_640x360_20mb.mp4; sourceTree = "<group>"; };
+		84F0C72F1C4E5C84009A01AD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		84F4A5571C19912F002E292A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		84F4A5591C199137002E292A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		84F4A55B1C1991CE002E292A /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
@@ -151,6 +160,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F0C7301C4E5C84009A01AD /* AVFoundation.framework in Frameworks */,
 				84F4A55A1C199137002E292A /* CoreLocation.framework in Frameworks */,
 				84F4A5581C19912F002E292A /* MapKit.framework in Frameworks */,
 			);
@@ -268,6 +278,24 @@
 			name = CollectionViewController;
 			sourceTree = "<group>";
 		};
+		84F0C7261C4E5756009A01AD /* AudioVideo */ = {
+			isa = PBXGroup;
+			children = (
+				84F0C7271C4E5778009A01AD /* AudioViewController.h */,
+				84F0C7281C4E5778009A01AD /* AudioViewController.m */,
+			);
+			name = AudioVideo;
+			sourceTree = "<group>";
+		};
+		84F0C72A1C4E58C8009A01AD /* multi */ = {
+			isa = PBXGroup;
+			children = (
+				84F0C72D1C4E5919009A01AD /* SampleVideo_640x360_20mb.mp4 */,
+				84F0C72B1C4E58F6009A01AD /* Ve Day Em Remix - Bang Chau Tran.mp3 */,
+			);
+			name = multi;
+			sourceTree = "<group>";
+		};
 		84FD36741C3E7F7F005BE592 /* TableView3Sections */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +308,7 @@
 		84FD5FD31C13049000B4B703 = {
 			isa = PBXGroup;
 			children = (
+				84F0C72F1C4E5C84009A01AD /* AVFoundation.framework */,
 				84F4A5591C199137002E292A /* CoreLocation.framework */,
 				84F4A5571C19912F002E292A /* MapKit.framework */,
 				84FD5FDE1C13049000B4B703 /* iOSStudy */,
@@ -300,6 +329,7 @@
 		84FD5FDE1C13049000B4B703 /* iOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				84F0C7261C4E5756009A01AD /* AudioVideo */,
 				8495A1F81C47B8FA00639857 /* CollectionViewController */,
 				84FD36741C3E7F7F005BE592 /* TableView3Sections */,
 				84074E491C3BD8F40056CDD2 /* CustomTableCell */,
@@ -320,6 +350,7 @@
 		84FD5FDF1C13049000B4B703 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				84F0C72A1C4E58C8009A01AD /* multi */,
 				84074E4F1C3BDA6C0056CDD2 /* img */,
 				848858851C1C438900992588 /* docs */,
 				84FD5FE01C13049000B4B703 /* Info.plist */,
@@ -448,6 +479,7 @@
 				84FA40291C41238800D1BCB3 /* lab tim kiem.pdf in Resources */,
 				8495A1F21C47B58F00639857 /*  1.png in Resources */,
 				84F7AF6C1C35412F0024C982 /* bai tap cuu chuong.pdf in Resources */,
+				84F0C72C1C4E58F6009A01AD /* Ve Day Em Remix - Bang Chau Tran.mp3 in Resources */,
 				8495A1F71C47B58F00639857 /* collecionview_Change_cell.pdf in Resources */,
 				84074E471C3BD63B0056CDD2 /* PHAN 1.pdf in Resources */,
 				848858801C1C390A00992588 /* images1.jpeg in Resources */,
@@ -455,6 +487,7 @@
 				8488588E1C1C43A200992588 /* dua xe.rtf in Resources */,
 				848845291C20941D00242F17 /* v5.png in Resources */,
 				848845251C20941D00242F17 /* v1.png in Resources */,
+				84F0C72E1C4E5919009A01AD /* SampleVideo_640x360_20mb.mp4 in Resources */,
 				84FD5FF01C13049100B4B703 /* LaunchScreen.xib in Resources */,
 				842E3C221C4527C700DE7E65 /* cherry.png in Resources */,
 				8495A1F31C47B58F00639857 /*  2.png in Resources */,
@@ -486,6 +519,7 @@
 				84F4A5601C19A232002E292A /* TopHitTableViewController.m in Sources */,
 				8495A1FB1C47B91E00639857 /* ImageCollectionViewController.m in Sources */,
 				84FD5FE51C13049000B4B703 /* AppDelegate.m in Sources */,
+				84F0C7291C4E5778009A01AD /* AudioViewController.m in Sources */,
 				848858841C1C393000992588 /* SingerTableViewController.m in Sources */,
 				84074E541C3BDF5B0056CDD2 /* CustomTableViewCell.m in Sources */,
 				848845081C20941D00242F17 /* SongListViewController.m in Sources */,
