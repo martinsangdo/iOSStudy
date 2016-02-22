@@ -10,6 +10,7 @@
 #import "MapAnnotation.h"
 #import "Constant.h"
 #import "GetDataViewController.h"
+#import "JSONTableViewController.h"
 
 @interface ViewController ()
 
@@ -119,6 +120,13 @@ NSString *strUlr = @"http://216.240.43.69/campus500/getFoldersLimit?offset=0&len
 - (IBAction)showUpVC:(id)sender {
     GetDataViewController *v2Controller = [self.storyboard instantiateViewControllerWithIdentifier:@"v2"];
     v2Controller.commonString = @"333";
+    [self.navigationController pushViewController:v2Controller animated:true];
+}
+
+- (IBAction)getJSONObject:(id)sender {
+    NSString* url = txtURL.text;
+    [sendingPackage setObject:url forKey:@"gotit"];
+    JSONTableViewController *v2Controller = [self.storyboard instantiateViewControllerWithIdentifier:@"jsonView"];
     [self.navigationController pushViewController:v2Controller animated:true];
 }
 @end

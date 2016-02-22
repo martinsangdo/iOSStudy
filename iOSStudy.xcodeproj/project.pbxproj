@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253A8FE91C7AC4BB00107D21 /* JSONTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 253A8FE81C7AC4BB00107D21 /* JSONTableViewController.m */; };
 		84074E471C3BD63B0056CDD2 /* PHAN 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84074E451C3BD63B0056CDD2 /* PHAN 1.pdf */; };
 		84074E481C3BD63B0056CDD2 /* PHAN 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84074E461C3BD63B0056CDD2 /* PHAN 2.pdf */; };
 		84074E4C1C3BD9FE0056CDD2 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84074E4B1C3BD9FE0056CDD2 /* CustomTableViewController.m */; };
@@ -78,6 +79,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		253A8FE71C7AC4BB00107D21 /* JSONTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONTableViewController.h; sourceTree = "<group>"; };
+		253A8FE81C7AC4BB00107D21 /* JSONTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONTableViewController.m; sourceTree = "<group>"; };
 		84074E451C3BD63B0056CDD2 /* PHAN 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PHAN 1.pdf"; sourceTree = "<group>"; };
 		84074E461C3BD63B0056CDD2 /* PHAN 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "PHAN 2.pdf"; sourceTree = "<group>"; };
 		84074E4A1C3BD9FE0056CDD2 /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
@@ -252,6 +255,8 @@
 				84F4A55F1C19A232002E292A /* TopHitTableViewController.m */,
 				84F4A55B1C1991CE002E292A /* MapAnnotation.h */,
 				84F4A55C1C1991CE002E292A /* MapAnnotation.m */,
+				253A8FE71C7AC4BB00107D21 /* JSONTableViewController.h */,
+				253A8FE81C7AC4BB00107D21 /* JSONTableViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -523,6 +528,7 @@
 				848858841C1C393000992588 /* SingerTableViewController.m in Sources */,
 				84074E541C3BDF5B0056CDD2 /* CustomTableViewCell.m in Sources */,
 				848845081C20941D00242F17 /* SongListViewController.m in Sources */,
+				253A8FE91C7AC4BB00107D21 /* JSONTableViewController.m in Sources */,
 				84074E4C1C3BD9FE0056CDD2 /* CustomTableViewController.m in Sources */,
 				84FD5FE21C13049000B4B703 /* main.m in Sources */,
 				84FD36771C3E7FA4005BE592 /* MultiSectionTableViewController.m in Sources */,
@@ -651,6 +657,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SangDo.iOSStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -661,6 +668,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SangDo.iOSStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
