@@ -17,12 +17,14 @@
     __weak IBOutlet MKMapView *mapView;
     NSUserDefaults *sendingPackage;
     NSUserDefaults *listnamePackage;
+    __weak IBOutlet UITextField *txtURL;
 }
 
 - (IBAction)searchLocation:(id)sender;
 - (IBAction)showKhacVietList:(id)sender;
 - (IBAction)showTrungQuanList:(id)sender;
 - (IBAction)showUpVC:(id)sender;
+- (IBAction)getJSONObject:(id)sender;
 
 @end
 
