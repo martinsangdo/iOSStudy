@@ -16,7 +16,13 @@
     __weak IBOutlet UIPickerView *myPicker;
     __weak IBOutlet UILabel *txtPicker;
     __weak IBOutlet UIPickerView *pickerJackbot;
+    
+    NSTimer* timer;
+    __weak IBOutlet UILabel *lblNSTimer;
 }
+- (IBAction)startNSTimer:(id)sender;
+- (IBAction)stopNSTimer:(id)sender;
+
 
 @property NSString* commonString;
 

@@ -112,5 +112,19 @@ NSMutableArray * jackbot3;
     // Pass the selected object to the new view controller.
 }
 */
+int i=0;
+
+-(void)run{
+    lblNSTimer.text = [NSString stringWithFormat:@"%i", i++];
+}
+
+- (IBAction)startNSTimer:(id)sender {
+    //run every seconds
+    timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(run) userInfo:nil repeats:YES];
+}
+
+- (IBAction)stopNSTimer:(id)sender {
+    [timer invalidate];
+}
 
 @end
